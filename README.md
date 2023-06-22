@@ -50,4 +50,21 @@ If you want to adjust your preference parameters, here is some option you can ch
  tensorboard --logdir directory/contain/tensorboard/
 ```
 ## Evaluating:
-According to test_img directory, I conduct 
+
+You could preview my evaluating process throughout Tenserboard. After 22 epochs, I reached:
+- The highest accuracy score: 0.7 in epoch 19
+  ![Accuracy score](./demo/run-epoch.png "Accuracy score")
+
+- Confusion matrix:
+ ![Confusion matrix](./demo/confusion-matrix.png "Confusion matrix")
+
+- Cross entropy loss in 2 processes:
+ ![Loss plot](./demo/plot-loss.png "Loss plot")
+
+## Testing:
+
+After buiding models, I started to implement the testing process by  file [test_cnn.py](.code/test_cnn.py)
+
+Regarding to the above confusion matrix, this model had good prediction in 4 classes: spider, chicken, horse and butterfly.
+
+In contrast, it scored the worst prediction in class: Cat. 
