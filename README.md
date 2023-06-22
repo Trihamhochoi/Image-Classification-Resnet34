@@ -43,4 +43,11 @@ If you want to adjust your preference parameters, here is some option you can ch
 |    --log-path   |    -l  |    tensorboard                         |[directory contains metrics visualization](https://pytorch.org/tutorials/intermediate/tensorboard_tutorial.html)|
 |    --checkpoint |   -sc  |    tensorboard/animals/epoch_last.pt   |directory which saves the train model|
 
- For example: python train.py -p dataset_location --log-patch directory-name 
+`For example:` python train.py -p dataset_location --log-patch directory-name 
+ 
+ **How to view tensorboard:** 
+```
+ tensorboard --logdir directory/contain/tensorboard/
+```
+## Evaluating:
+According to test_img directory, I conduct 
